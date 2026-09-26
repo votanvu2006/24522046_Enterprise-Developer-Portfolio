@@ -363,3 +363,31 @@ button:focus-visible {
         grid-column: auto;
     }
 }
+
+/* =========================
+   Theme Engine
+   ========================= */
+
+[data-theme="dark"] {
+    --color-background: #111827;
+    --color-surface: #1f2937;
+    --color-text: #e5e7eb;
+    --color-heading: #f9fafb;
+    --color-primary: #60a5fa;
+    --color-border: #374151;
+}
+
+.theme-toggle {
+    padding: var(--space-xs) var(--space-sm);
+    color: var(--color-text);
+    background: transparent;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
